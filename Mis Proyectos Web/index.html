@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<!--el archivo principal debe ser guardado como index.html antes de seguir escribiendo-->
+		<title>Mi Primera Pagina</title>
+		<link rel="icon" href="Sample/Stonks.ico">
+		<meta charset="utf-8">
+		<!--"meta" es el metodo de lectura de la pagina, su codificación-->
+		<meta name="keywords" content="Curso de HTML">
+		<meta name="description" content="Conceptos de lenguaje HTML para 
+		el aprendizaje e implementación de este curso">
+		<meta name="author" content="Julio Gonzalez">
+		<meta name="robots" content="index">
+		<meta name="copyright" content="">
+		<link rel="stylesheet" type="text/css" href="style.css">
+		<!--estos meta datos solo son necesarios para el SEO del buscador-->
+	</head>
+	
+	<body>
+
+		<header>
+
+				<h1>Curso de HTML</h1>
+
+			<nav>
+				<h3>Indice de Página</h3>
+
+				<ul>
+					<li><a href="index.html">Inicio</a></li>
+					<li><a href="#conceptos">Conceptos</a></li>
+					<li><a href="#tipos">Tipos</a></li>
+					<li><a href="#listas">Listados</a></li>
+					<li><a href="#multimedia">Contenido Multimedia</a></li>
+					<li><a href="#formularios">Formulario</a></li>
+					<li><a href="#tablas">Tablas</a></li>
+					<li><a href="#contactanos">Acerca de nosotros</a></li>
+				</ul>
+			</nav>
+
+		</header>
+
+		<article>
+
+			<div>
+				<section>
+
+					<h2 id="conceptos">Conceptos de lenguaje HTML:</h2>
+					<!--(el head existe hasta h6 y cada uno tiene un tamaño distinto)-->
+		
+					<p>
+			   		"DOCTYPE" (tipo de documento).<br>
+			   		<!--El br es para desplazar una linea abajo el texto siguiente-->
+			   		"HTML" (Hyper Text Multi Language).<br>
+			   		"SEO" (Search Engine Optimization).
+					</p>
+
+				</section>
+			</div>
+
+			<div>
+				<section>
+
+					<h2 id="tipos">Tipos de escritura para HTML:</h2>
+
+					<p>
+						b: para <b>negrita.</b><br>
+						i: para <i>cursiva.</i><br>
+						strike: para <strike>tachada.</strike><br>
+						small: para <small>chiquita.</small><br>
+						a: para enlaces de re-direccion, de manera <b>local</b> con rutas de la carpeta contenedora y 
+						<b>externa</b> con la referencia de <b>https.</b><br><br>
+
+						<a href="https://matias.ma/nsfw/?fbclid=IwAR01T0xM9NGMHcAZ5lA7JSzujBLZ-j-t_PUB2q-WTo8ODkM95D4MTYXVVzY" target="_BLANK">Ejemplo de enlace externo</a> (ir a pagina especial).<br><br>
+						<!--para rutas locales se escribe el nombre del archivo que está en la misma carpeta "index.html" y
+						 cuando la ruta es en otra carpeta se escribe entre las comillas "ejemp/index.html"-->
+						<a href="Sample/page-ejemp.html">pagina de ejemplo interno</a>
+					</p>
+
+					<p>
+						Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+						tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+						quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+						consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+						cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+						proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+					</p>
+
+				</section>
+			</div>
+
+			<div>
+				<section>
+
+					<h2 id="listas">Orden de lista por Puntos:</h2>
+		
+					<ul>
+						<li>Orden</li>
+						<li>Logica</li>
+						<li>Creatividad</li>
+						<li>Entendimiento</li>
+						<li>Practica</li>
+						<li>Retro-alimentacion</li>
+						<li>Captacion</li>
+						<li>planificacion</li>
+						<li>Intuitivo</li>
+					</ul>
+		
+					<h2>Orden de lista Enumerada:</h2>
+		
+					<ol>
+						<li>Orden</li>
+						<li>Logica</li>
+						<li>Creatividad</li>
+						<li>Entendimiento</li>
+						<li>Practica</li>
+						<li>Retro-alimentacion</li>
+						<li>Captacion</li>
+						<li>planificacion</li>
+						<li>Intuitivo</li>
+					</ol>
+
+				</section>
+			</div>
+
+			<div>
+				<section>
+			
+				<h3 id="multimedia">Imagen de ejemplo y recordatorio</h3> 
+		
+					<img src="Sample/toma-awa-640x619.jpg" width="360px" alt="Toma Awa" title="Toma Awa">
+					<!--para agregar contenido multimedia se usa el atributo "src", e la navegacion por carpetas para añadir archivos se usa el nombre de archivo a elegir, para buscarlo carpeta atras: se usa tantas veces como se necesite el "../" y para carpeta adelante solo colocar el nombre de la carpeta, ejemp: "carpeta/"; para cambiar su tamaño se usa "width" y se ajusta en Pixeles "px" ó heigth-->
+
+					<h3>Video de Ejemplo</h3>
+
+					<video src="Sample/TEST VIDEO.mp4" controls="" height="300px">
+					<!--El atributo "controls" se usa para que el navegador integre sus controles de reproduccion en el video-->
+					</video>
+
+					<h3>Audio de Ejemplo</h3>
+
+					<audio src="Sample/anime-wow-sound-effect-mp3cut.mp3" controls="">
+					<!--Es importante colocar el atributo "controls" para la reproduccion del audio y video-->
+					</audio>
+
+				</section>
+			</div>
+
+		</article>
+
+		<div>
+			<form id="formularios">
+				<h4>Introduccion de texto:</h4>
+				<input type="text" required="" placeholder="texto">
+				<!--se usa el atributo "require" para obligar al usuario a llenar este campo antes de enviar el formulario-->
+				<br>
+
+				<h4>Introduccion de contraseña:</h4>
+				<input type="password" required="" placeholder="password"><br>
+
+				<h4>Introduccion de numberos:</h4>
+				<input type="number" placeholder="0000"><br>
+
+				<h4>Introduccion de correo electronico</h4>
+				<input type="email" placeholder="@"><br>
+
+				<h4>Introduccion de Color</h4>
+				<input type="color"><br>
+
+				<h4>Introduccion de Rango</h4>
+				<input type="range" min="1" max="5"><br>
+				<!--usa atributos de seleccion entre un minimo y un maximo-->
+
+				<h4>Introduccion de fecha</h4>
+				<input type="date"><br>
+
+				<h4>Introduccion de hora</h4>
+				<input type="time"><br>
+
+				<h4>Introduccion de un Boton</h4>
+				<input type="button" value="Boton">
+				<!--usa el atributo "value" para agregar un nombre al boton--><br>
+
+				<h4>Area de introduccion de texto</h4>
+				<textarea placeholder="escriba aqui (tamaño personalizable)"></textarea>
+				<!--se puede agregar el atributo de "readonly" para que el texto dentro de este campo sea solo legible-->
+
+				<h4>Introduccion de Enviar</h4>
+				<input type="submit" value="Enviar">
+				<!--usa el atributo "value" para cambiar el nombre por defecto del boton para enviar datos recopilados al servidor-->
+			</form>
+		</div>
+
+		<div>
+			<h3 id="tablas">Tabla de Aprendizaje</h3>
+
+			<table border="2px">
+				<tr>
+					<td><b>Nombre</b></td>
+					<td><b>Apellido</b></td>
+					<td><b>Entusiasmo</b></td>
+					<td><b>Nivel</b></td>
+				</tr>
+				<tr>
+					<td>Danyhover</td>
+					<td>Bruzual</td>
+					<td>Máximo</td>
+					<td>5</td>
+				</tr>
+				<tr>
+					<td>Jorge</td>
+					<td>Aponte</td>
+					<td>Máximo</td>
+					<td>1</td>
+				</tr>
+				<tr>
+					<td>Julio</td>
+					<td>Gonzalez</td>
+					<td>Máximo</td>
+					<td>1</td>
+				</tr>
+			</table>
+		</div>
+	
+		<div>
+			<section>
+				<h4 id="contactanos">Footer</h4>
+				<p>
+					<i>Gracias por visitar mi proyecto de pagina web enfocado en enseñar y compartir conocimientos.</i><br>
+					<b>Para comunicarte conmigo en mis redes sociales haz </b><a href="https://facebook.com/julio.achram" 
+					target="_BLANK">click aqui</a>
+				</p>
+			</section>
+		</div>
+	</body>
+</html>
