@@ -5,7 +5,11 @@
 
 body {
 	background-color: rgb(86 78 83);
+	background-image: url("https://c4.wallpaperflare.com/wallpaper/478/419/655/ilya-kuvshinov-drawing-women-wallpaper-preview.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
 	margin: 0px;
+	z-index: -1;
 }
 
 ul {
@@ -14,11 +18,10 @@ ul {
     padding:0;
     color: rgb(255, 255, 255);
 	text-decoration-color: rgb(255, 255, 255);
-	background-color: rgb(231, 187, 231);
+	background-color: rgba(231, 187, 231, 0.7);
 	width: 150px;
 	height: 100%;
 	position: fixed;
-	border-right: solid 2px #ccc;
 }
 
 li a {
@@ -27,11 +30,13 @@ li a {
 	display: block;
 	padding: 10px;
 	color: black;
+	transition: .3s;
 }
 
 li a:hover {
 	background-color:  rgba(166, 226, 218, 0.74);
 	color: rgba(255, 255, 255, 0.74);
+	transition: .3s;
 }
 
 li a.active {
@@ -42,11 +47,14 @@ li a.active {
 .title{
 	margin-top: 19%;
 	margin-left: 35%;
-	display: inline-block;
-	background-color: rgba(221, 189, 103, 0.959);
+	background-color: rgba(221, 189, 103, 0.9);
 	display: inline-flex;
 	text-align: center;
 	border-radius: 12px;
+}
+
+article{
+	margin: 5px;
 }
 
 h3 {
@@ -84,13 +92,13 @@ form {
 
 fieldset {
 	background-color: rgba(240, 203, 124, 0.842);
-	border: solid 1px rgb(253, 200, 55);
+	border: solid 1px rgb(255, 255, 255);
 	width: 290px;
 	height: 350px;
 }
 
 .field {
-	border: solid 1px rgb(253, 200, 55);
+	border: solid 1px white;
 	width: 100%;
 }
 
