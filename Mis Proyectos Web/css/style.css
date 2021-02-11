@@ -1,5 +1,69 @@
-body{
-	font-family: Arial;
-	text-justify: text-justify;
-	margin-left: 25px;
+/* * {
+
+	color: red; !important <<esta etiqueta rarmente es usada, y su funcion es colocar el objetivo como primordal 
+	sobre todos los demas> "Este atributo es para añadir color al objeto, 
+	se puede ajustar con codigos exadecimales o RGB" (obligatorio cerrar con un punto y coma).
+	background-color: #red; "es el mismo concepto anterior pero este es para el fondo de la caja contenedora".
+	display: block; "cambia el comportamiento de las cajas, es decir que podemos hacer que sea en 
+	bloque o como objetos en linea (block, inline, inline-block, flex, grid, none)".
+	padding: 10px 10px 10px 10px; este se usa para agregar separacion al texto a los limites de la caja contenedora 
+	(en orden, desde el top, right, botton y left).
+	border: 1px inset red; aqui creamos un borde a la caja contenedora para remarcar los limites.
+	border-radius: 2; con esta podemos dar un radio de giro a las esquinas de la caja contenedora para redondearla.
+	outline: 10px; son bordes de cajas sin que estas ocupen un espacio real, solo visual.
+	margin: 10px 10px 10px 10px; igualmente que padding pero esta funcion es para crear el margen que separa de las otras cajas.
+	background-image: aqui colocamos la imagen que se usará como fondo para la pagina o caja contenedora.
+	height: 100px; Altura de la caja.
+	width: 100px; Anchura de la caja.
+	box-shadow: 2px 4px 10px 0 #000; sombreado de la caja.
+	opacity: 0.5; es la transparencia de la caja.
+	transform: rotate(-45reg); 
+
+	font-size: 16px; "como su nombre lo indica, es el tamaño de la fuente y esta se edita por Pixeles (px) o 
+	medidas de distancia regulares, cm, mm; tambien con puntos (pt)".
+	font-family: sans-serif; "este atributo es para colocar un estilo de fuente de texto personalizada a la pagina".
+	line-height: 2; "esta es la separacion del caracter arriba y abajo".
+	font-weight: 400; "es el grosor de la fuente".
+	text-shadow: 2px 2px 6px #fff. sombreado del texto.
+
+
+
+} Esta es "*" la etiqueta utilizada para selecionar todos los elementos agregados al codigo HTML.*/
+
+/*.indice {
+	POR CLASE: La etiqueta "class" se representa con un punto antes del nombre que se le haya dado dentro del css.
+} */
+
+/* button {
+	POR ELEMENTO: tambien se puede modificar usando el nombre de la etiqueta y/o elemento.
+} */
+
+* {
+	font-family: 'Dosis' , sans-serif;
+	font-weight: 400;
+}
+
+.encabezado	{	
+	color: rgb(170, 250, 223);
+	background-color: rgb(192, 231, 219);
+	font-size: 25px;
+	line-height: 0.5px;
+	text-shadow: 2px 2px 8px #000; 
+	text-align: center;
+	padding: 10px 0;
+	border: 2px solid rgb(94, 168, 144);
+
+
+}
+
+.navbar {
+	margin: 1px, 0px;
+}
+
+.concepto {
+	padding: 2;
+}
+
+.concepto-p {
+	padding: 2;
 }

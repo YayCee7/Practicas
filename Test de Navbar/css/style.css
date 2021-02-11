@@ -1,0 +1,136 @@
+* {
+	font-family: 'Dosis' , sans-serif;
+	color: rgba(255, 255, 255, 0.87);
+}
+
+body {
+	background-color: rgb(211, 182, 198);
+	margin: 0px;
+}
+
+ul {
+	list-style-type: none;	
+	margin: 0;
+    padding:0;
+    color: rgb(255, 255, 255);
+	text-decoration-color: rgb(255, 255, 255);
+	background-color: rgb(231, 187, 231);
+	width: 150px;
+	height: 100%;
+	position: fixed;
+	border-right: solid 2px #ccc;
+}
+
+li a {
+	text-decoration: none;
+	text-align: center;
+	display: block;
+	padding: 10px;
+	color: black;
+}
+
+li a:hover {
+	background-color:  rgba(166, 226, 218, 0.74);
+	color: rgba(255, 255, 255, 0.74);
+}
+
+li a.active {
+    background-color:  rgb(166, 226, 218);
+	color: rgb(255, 255, 255);
+}
+
+.title{
+	margin-top: 19%;
+	margin-left: 35%;
+	display: inline-block;
+	background-color: rgba(221, 189, 103, 0.959);
+	display: inline-flex;
+	text-align: center;
+	border-radius: 12px;
+}
+
+h3 {
+	margin-top: 25%;
+	margin-left: 26%;
+	font-size: 24px;
+	background-color: rgba(221, 189, 103, 0.959);
+	display: inline-flex;
+	padding: 1em 2em 1em 2em;
+	border-radius: 1em;
+}
+
+.mensaje {
+	margin-left: 34%;
+	font-size: 12px;
+}
+
+div {
+	color: rgba(29, 29, 29, 0.76);
+	margin-left: 15%;
+	padding:1px 16px;
+}
+
+form {
+	width: 300px;
+	background-color: rgba(224, 174, 37, 0.932);
+	display: inline-flex;
+	padding: 8px;
+	margin: auto;
+	margin-top: 10%;
+	margin-left: 30%;
+	border-radius: 6px;
+	font-size: 18px;
+}
+
+fieldset {
+	background-color: rgba(240, 203, 124, 0.842);
+	border: solid 1px rgb(253, 200, 55);
+	width: 290px;
+	height: 350px;
+}
+
+.field {
+	border: solid 1px rgb(253, 200, 55);
+	width: 100%;
+}
+
+.field:focus {
+	border-color: rgb(154, 241, 230);
+}
+
+input {
+	background-color: rgba(235, 210, 143, 0.973);
+	padding-top: 10px;
+	margin-top: 10px;
+	border: 0;
+	outline: none;
+
+}
+
+label {
+	padding-top: 8px;
+	padding-bottom: 8px;
+	display: block
+}
+
+.center-content {
+	text-align: center;
+}
+
+
+.btn{
+	margin-top: 60px;
+    text-decoration: none;
+    padding: 10px;
+    font-weight: 600;
+    font-size: 20px;
+    color: #3b3b3b;
+    background-color: #fff7ac;
+    border-radius: 6px;
+    border: 2px solid #009bb0;
+  }
+
+  .btn:hover{
+    color: #18b4ba;
+    background-color: #ffffff;
+  }

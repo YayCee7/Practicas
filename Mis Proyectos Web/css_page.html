@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Mi Primera Página CSS</title>
+		<link rel="icon" href="media/Stonks.ico">
+		<link rel="stylesheet" type="text/css" href="css/style.css">
+		<link rel="stylesheet" type="text/css" href="css/normalize.css">
+		<link rel="preconnect" href="https://fonts.gstatic.com">
+		<link href="https://fonts.googleapis.com/css2?family=Dosis&display=swap" rel="stylesheet">
+		<meta charset="utf-8">
+		<meta name="keywords" content="Curso de HTML">
+		<meta name="description" content="Conceptos de lenguaje HTML para 
+		el aprendizaje e implementación de este curso">
+		<meta name="author" content="Julio Gonzalez">
+		<meta name="robots" content="index">
+		<meta name="copyright" content="">
+	</head>
+
+	<body>
+
+		<header class="encabezado">
+			<h1>Curso de CSS</h1>
+		</header>
+
+		<nav class="navbar">
+			<h3 class="navbar__indice">Indice de Página</h3>
+			<li class="navbar__link"><a href="index.html" class="indice">Página en HTML</a></li>
+		</nav>
+
+		<div class="introduccion">
+			<h2>Conceptos</h2>
+		</div>
+
+		<article>
+			<div class="concepto">
+				<p class="concepto__p"><b>En CSS</b> verémos la parte del embellesimiento del <b>frontend</b>. 
+				Donde se podrá personalizar la página a gusto del editor; modificar su tamaño, 
+				color, posición, entre otros atributos que le darán una fachada que represente 
+				dicha página web.</p>
+			</div>
+
+			<div>
+				<h3>Selectores en CSS</h3>
+	
+				<p>
+					<b>Universal:</b> * como atributo. Para marcar todos los elementos.<br>
+
+					<b>De Tipo:</b> Para seleccionar los titulos, parrafos botton's ó cualquier 
+					otro objéto que se integre en el código HTML (los Tag's).<br>
+
+					<b>Clases:</b> (class como atributo y en CSS con un ".sample") Es para darle 
+					identidad al objeto y modificar este usando el nombre que se le haya dado.<br>
+
+					<b>ID:</b> (id como atributo y en CSS con "#") Este solo se debe usar para Identificar
+					un objeto como regla.<br>
+
+					<b>Por Atributo:</b>Con este creamos un atributo en el HTML que usaremos en el 
+					código CSS (se representa con "[sample]") para modificarlo.<br>
+
+					<b>Decendiente:</b>En este se usarán los tag's por orden jerárquico. Para separar 
+					elementos dentro de otros elementos sin que esos alteren a otros tag's dentro o fuera de el tag
+					que lo encierra.<br>
+
+					<b>Pseudo-clases:</b>Son modificaciones especiales que se agregan a cualquier 
+					elemento en el codigo, primeramente identificando como una clase. 
+					<b>Las mas usadas son: visited, link, hover y/o active.</b><br>
+
+					<b>Estilos en linea:</b> se representa con "style".</b><br>
+
+					<b>Importante:</b> Se representa como "!important" y este supera en orden jerarquico a todos los 
+					demas selectores.
+				</p>
+			</div>
+
+			<div>
+				<h2>Orden jerárquico de selectores:</h2>
+
+			<ol>
+				<li>!important</li>
+				<li>style</li>
+				<li>id</li>
+				<li>class</li>
+				<li>pseudo-class</li>
+				<li>atributes</li>
+				<li>element</li>
+				<li>pseudo-element</li>
+			</ol>
+			</div>
+
+			<div>
+				<h2>Consejos:</h2>
+
+				<h3>Metodologia BEM:</h3>
+				<p>
+					<b>La metodología BEM</b> divide la interfaz de usuario en bloques 
+					independientes para crear componentes escalables y reutilizables.
+				</p>
+				<p>
+					BEM (Block, Element, Modifier o Bloque, Elemento, Modificador) es una metodología
+					 ágil de desarrollo basada en componentes. Fue creada por la empresa Yandex para 
+					 desarrollar sitios en poco tiempo y con un soporte de largo plazo.
+				</p>
+				<p>
+					El objetivo final de BEM es dividir la interfaz de usuario en bloques independientes 
+					para crear componentes escalables y reutilizables. Propone un estilo descriptivo para 
+					nombrar cada una de las clases a utilizar, permitiendo así crear un estructura de código consistente.
+				</p>
+			</div>
+			
+			<div>
+				<h4>REM y EM</h4>
+				<p><b>rem y em</b> como atributo para las medidas en relatividad a la cantidad de pixeles que este ocupa, 
+				<b>es decir:</b> que <b>1em</b> equivale a <b>16px</b> por defecto, y esta se puede personalizar 
+				colocandole otro tamaño a la caja contenedora. Esto es usado para la adaptabilidad al tamaño de la ventana 
+				(Responsive Desing).</p>
+				<p><b>Como tambien</b> lo estan los <b>Viewport</b> (representados como "vw" en la hoja de CSS) 
+				para determinar el porcentaje que ocupe el objetpo en patalla.</p>
+			</div>
+
+			<div>
+				<h2>Atributos y propiedades de estilo CSS:</h2>
+			</div>
+
+			<div>
+				<h3>Propiedades de Cajas:</h3>
+
+				<ul>
+					<li>padding</li>
+					<li>margin</li>
+					<li>border</li>
+					<li>border-radius</li>
+					<li>color</li>
+					<li>background-color</li>
+					<li>background-image</li>
+					<li>height</li>
+					<li>width</li>
+					<li>display</li>
+					<li>box-shadow</li>
+					<li>outline</li>
+				</ul>
+			</div>
+
+			<div>
+				<h3>Propiedades de la tipografia:</h3>
+
+				<ul>
+					<li>font-zise</li>
+					<li>font-family</li>
+					<li>line-height</li>
+					<li>font-weight</li>
+					<li>font-style</li>
+					<li>text-decoration</li>
+					<li>list-style</li>
+					<li>text-align</li>
+				</ul>
+			</div>
+		</article>
+
+		<div>
+			<button id="boton">Entendido</button>
+		</div>
+
+	</body>
+</html>
