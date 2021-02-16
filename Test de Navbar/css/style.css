@@ -4,11 +4,10 @@
 }
 
 body {
-	background-color: rgb(86 78 83);
-	background-image: url("https://c4.wallpaperflare.com/wallpaper/478/419/655/ilya-kuvshinov-drawing-women-wallpaper-preview.jpg");
+	background-image: url(https://c4.wallpaperflare.com/wallpaper/478/419/655/ilya-kuvshinov-drawing-women-wallpaper-preview.jpg);
 	background-repeat: no-repeat;
 	background-size: cover;
-	margin: 0px;
+	margin: 0;
 	z-index: -1;
 }
 
@@ -125,7 +124,6 @@ label {
 	text-align: center;
 }
 
-
 .btn{
 	margin-top: 60px;
     text-decoration: none;
@@ -137,10 +135,10 @@ label {
     border-radius: 6px;
     border: none;
 	transition: .3s;
-  }
+}
 
   .btn:hover{
     color: rgba(224, 174, 37, 0.932);
     background-color: #ffffff;
 	transition: .3s;
-  }
+}
