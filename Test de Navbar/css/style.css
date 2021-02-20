@@ -4,7 +4,7 @@
 }
 
 body {
-	background-image: url(https://c4.wallpaperflare.com/wallpaper/478/419/655/ilya-kuvshinov-drawing-women-wallpaper-preview.jpg);
+	background-image: url(../img/syncwave_wallpaper.png);
 	background-repeat: no-repeat;
 	background-size: cover;
 	margin: 0;
@@ -44,7 +44,7 @@ li a.active {
 }
 
 .title{
-	margin-top: 19%;
+	margin-top: 2%;
 	margin-left: 35%;
 	background-color: rgba(221, 189, 103, 0.9);
 	display: inline-flex;
