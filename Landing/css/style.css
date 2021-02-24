@@ -8,6 +8,7 @@
 
 body {
     background-color: rgb(245, 245, 245);
+    z-index: -1;
 }
 
 /* SHARE */
@@ -71,10 +72,11 @@ a {
 }
 
 /*? HEADER */
+
 header {
     background: rgb(3,62,120);
-    background: -moz-linear-gradient(90deg, rgba(3,62,120,1) 0%, rgba(32,130,97,1) 73%, rgba(35,150,38,1) 95%, rgba(11,171,95,1) 100%);
-    background: -webkit-linear-gradient(90deg, rgba(3,62,120,1) 0%, rgba(32,130,97,1) 73%, rgba(35,150,38,1) 95%, rgba(11,171,95,1) 100%);
+    /*background: -moz-linear-gradient(90deg, rgba(3,62,120,1) 0%, rgba(32,130,97,1) 73%, rgba(35,150,38,1) 95%, rgba(11,171,95,1) 100%);
+    background: -webkit-linear-gradient(90deg, rgba(3,62,120,1) 0%, rgba(32,130,97,1) 73%, rgba(35,150,38,1) 95%, rgba(11,171,95,1) 100%);*/
     background: linear-gradient(90deg, rgba(3,62,120,1) 0%, rgba(32,130,97,1) 73%, rgba(35,150,38,1) 95%, rgba(11,171,95,1) 100%);
 }
 
@@ -120,8 +122,16 @@ header {
 
 /*? SECTION SECOND */
 
-.section-second {
-    background-image: url(../img/computer-2270_1920.jpg);
+/*.section-second {
+    background-image:url(../img/computer-2270_1920.jpg) ;
+    background-color: rgba(90deg, rgb(30, 38, 146), rgb(19, 137, 153), rgb(31, 197, 106), alpha);
+    background-repeat: no-repeat;
+    background-size: cover;
+    z-index: -1;
+}*/
+.section-second{
+   
+    background-image:url(../img/computer-2270_1920.jpg) ;
     background-repeat: no-repeat;
     background-size: cover;
     z-index: -1;
@@ -129,18 +139,21 @@ header {
 
 .register {
     color: white;
-	margin: 0% 50% 0% 50%;
 	background-color: rgba(226, 226, 226, 0.568);
-	display: inline-flex;
+	display: block;
 	text-align: center;
 	border-radius: 6px;
+}
+
+h2 {
+    font-size: 36px;
 }
 
 form {
 	width: 300px;
     background: rgb(3,62,120);
-    background: -moz-linear-gradient(90deg, rgba(3,62,120,1) 0%, rgba(32,130,97,1) 73%, rgba(35,150,38,1) 95%, rgba(11,171,95,1) 100%);
-    background: -webkit-linear-gradient(90deg, rgba(3,62,120,1) 0%, rgba(32,130,97,1) 73%, rgba(35,150,38,1) 95%, rgba(11,171,95,1) 100%);
+    /*background: -moz-linear-gradient(90deg, rgba(3,62,120,1) 0%, rgba(32,130,97,1) 73%, rgba(35,150,38,1) 95%, rgba(11,171,95,1) 100%);
+    background: -webkit-linear-gradient(90deg, rgba(3,62,120,1) 0%, rgba(32,130,97,1) 73%, rgba(35,150,38,1) 95%, rgba(11,171,95,1) 100%);*/
     background: linear-gradient(90deg, rgba(3,62,120,1) 0%, rgba(32,130,97,1) 73%, rgba(35,150,38,1) 95%, rgba(11,171,95,1) 100%);
 	display: block;
 	padding: 8px;
@@ -163,7 +176,7 @@ fieldset {
 }
 
 .field {
-	border: solid 1px white;
+	border: none;
 	width: 99%;
     font-size: 14px;
     padding-top: 1em;
@@ -196,4 +209,5 @@ label {
 
 footer {
     background-color: rgba(59, 177, 130, 0.74);
+    padding: 10px 0px;
 }
