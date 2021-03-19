@@ -7,9 +7,15 @@ console.log('HELLO')
 console.log('WORLD')
 console.log(2)*/ //se pueden dejar sms, numeros, ecuaciones y variables.
 
-// alerta para el usuario //
+let lorem = 'lorem ipsum dolor sit amet.';
 
-/* alert('Bienvenido a mi test de js'); */
+document.write(lorem);
+//Con Document y write escribimos lo que alamecenemos en la variable y se muestra en la pagina.
+
+
+// ALERTA para el usuario //
+
+alert('Bienvenido a mi test de js');
 console.log('Bienvenido a mi test de js');
 
 /*let cajita = 'ñapato'; // variable tipo: texto.
@@ -19,21 +25,23 @@ let gumball = cajita;
 
 console.log(gumball);*/
 
+
 // Operaciones Matemáticas. //
 
-/*console.log('>>operaciones matematicas<<');
+/* console.log('>>operaciones matematicas<<');
 
-let eq = ' = resultado de ecuación.';
 let num1 = 23;
 let num2 = 7;
 let num3 = -45;
 let resultado = num1+num2;
+resultado = num2.concat(num3); //concat nos siver para concatenar los operadores con strings
 
-console.log(resultado+eq);
-console.log(num1-num2+eq);
-console.log(num1*num3+eq);
-console.log(num1/num2+eq);
-console.log(num1%num3+eq);*/
+console.log(resultado);
+console.log(num1-num2);
+console.log(num1*num3);
+console.log(num1/num2);
+console.log(num1%num3); */
+
 
 // Operaciones de incremento y decremento. //
 
@@ -52,7 +60,8 @@ let b = 5;
 console.log(b)
 console.log(b--)
 console.log(b)
-console.log(--b);}*/
+console.log(--b);} */
+
 
 // operadores de asignación. //
 
@@ -78,6 +87,7 @@ console.log(c);
 c %= 7;
 console.log(c);
 
+
 // entrada de información. //
 
 let nombre = prompt('Hola, como te llamas?');
@@ -85,6 +95,7 @@ let nombre = prompt('Hola, como te llamas?');
 alert('Hola '+nombre+', buen dia.');
 
 console.log(nombre);*/
+
 
 // sumar X num (min:2) mostrar en alert el resultado //
 
@@ -98,6 +109,7 @@ console.log(numx+numy);
 const PI = 3.14; //una constante es para añadir un valor que sera permanente y no será re-emplazada.
 
 console.log(PI);*/
+
 
 // String //
 
@@ -122,6 +134,7 @@ console.log(strings1.includes('a',6));//Y aqui le colocamos a partir de que posi
 console.log(strings2.repeat(2));//Repetimos la variable tantas veces como le indiquemos//
 console.log('Hola Mundo'.repeat(10));//Tambien se puede usar asi//*/
 
+
 // Template Strings //
 
 /* let firstname = 'Julio';
@@ -130,6 +143,8 @@ let yearsold = '23';
 
 console.log('Hola' + " " + firstname + " " + secondname + ', tienes' + " " + yearsold + " " + 'años.');
 console.log(´Hola ${firstname} ${secondname}, tienes ${yearsold} años.´); */
+// IMPORTANTE solo usar tildes inversos `` (o Backticks) para concatenar usando ${}.
+
 
 // Condicionales //
 /* 
@@ -141,6 +156,7 @@ if(con>0){
     console.log('${con} es mayor que 0');
 }
 
+
 // Condicional Compuesto //
 
 if(con>0){
@@ -149,6 +165,7 @@ if(con>0){
 else{
     console.log('${con} es menor que 0');
 }
+
 
 // Condicionales Multiples //
 
@@ -162,19 +179,18 @@ else{
     console.log('${con} es igual que 0');
 } 
 
-// Operadores Logicos //
 
-
+// OPERADORES LOGICOS //
+// solo trabajan con true o false (valores Boleanos).
 // && and , || o //
 
 if(con>0 && sin>0){
     console.log(`${con} y ${sin} son mayores que 0`); */
 
-
-// ' =! `
-
-// && --> todas las condiciones deben cumplirse
-// || --> cualquiera debe cumplirse pero no obligatoriamente todas
+// =! --> (Not) 
+// && --> (and) todas las condiciones deben cumplirse para true.
+// || --> (or) cualquiera debe cumplirse pero no obligatoriamente todas para ser true.
+// !  --> convierte el valor boleano en lo contrario.
 
 /* bombillo */
 
@@ -187,10 +203,13 @@ if (pos || negativo){
     alert('DOPE')
 } */
 
-// == , ===,  !=, !==
 
+// OPERADORES de COMPARACION //
+// Igualdad ==, Identidad Estricta ===, Inigualdad !=, !== Diferente Estricto
 // ==, === --> preguntas si son iguales
 // == --> si es igual pero no es estricto (si lo que estamos comparando es del mismo tipo)
+// Mayor que >=, Menor que <=.
+
 /* let y2 = "2"
 
 if (y2 === 2){
@@ -240,6 +259,7 @@ if (edad>0 && edad<11){
 } else {
     alert('Dato Erroneo.')
 } */
+
 
 // Menu de opciones [EJEMPLO]
 /* con switch trabajamos casos en concreto. */ 
@@ -299,6 +319,7 @@ switch (respuesta.toLowerCase()) {
         break;
 } */
 
+
 // estudiante, 3 notas, que calcule el promedio, alertar si es bueno, medio, malo [entre 0 a 20 como nota]
 // para calcular el promedio se suman las 3 notas y se divide entre el numero de ellas (3)
 
@@ -318,13 +339,14 @@ if (promedio<11) {
     alert('Dato Erroneo.')
 } */
 
+
 // [PRUEBA DE STRINGS] limpiar los espacios de un texto.
+
 
 // quiz 1
 /* let texto = ' re-contra marico el que se buguee   '
 console.log(texto.trim()) */
 
-// quiz 2
 
 // TERNARIOS //
 
@@ -336,13 +358,14 @@ if(texto){
     console.log('no existe esta chingada')
 } */ // el ternario es igual a eso solo que comprimido para optimizar memoria. // requieren obligatoriamente un else
 
+
 // BUCLES [While] //
 
-let numerico = 100
+/*let numerico = 100
 let divisor = 2
 let resultado = numerico
 
-/* while (numerico<=100) {
+ while (numerico<=100) {
     console.log(numerico)
     numerico++
 } */
@@ -359,12 +382,13 @@ let resultado = numerico
     console.log(resultado)
 } */
 
+
 // do while //
 
-let obj = 1
+/* let obj = 1
 let palabra = "CUACK"
 
-/* do {
+ do {
     objeto === "BOMBILLO" ? sw = false : sw = true
     console.log('Inicializado')
 } while (sw) */
@@ -373,6 +397,7 @@ let palabra = "CUACK"
     console.log(palabra)
     obj++
 } while (obj<=4); */
+
 
 // Array I //
 
@@ -395,7 +420,7 @@ let palabra = "CUACK"
 
 /* for ( elemento in listado) {
     console.log(elemento)
-}  */// con in te mostrara el indice de cada elemento.
+}  */ // con in te mostrara el indice de cada elemento.
                 // 0            1           2
 let input = ['test@test.com', 'a@a.a', 'danitequiero@suanfonson.com', 'julle@dicksuck.org', 'gayculebra@picado.julle']
 
@@ -412,6 +437,7 @@ for ( item of input ) {
 } // of busqueda del elemento. */
 
  // input.map((el, index) => console.log(`${index} = ${el}`))
+
 
 // Function: es una funcion independiente. // 
 
@@ -445,7 +471,6 @@ nombresLista.push('IDK')
 let cantidad= prompt('seleccione cuantos elementos quiere borrar min: 1') */
 
 // nombresLista.splice(indiceBorrar, cantidad) //para borrar desde el indice seleccionado
-
 
 /* for ( item of nombresLista ) {
     console.log(item)
@@ -491,15 +516,33 @@ let year = separado[2]
 
 //console.log(`La marca de tu vehiculo es un ${marca} modelo ${modelo} del año ${year}.`)
 
-let precio = "35.21$"
+/* let precios = ["35.21$", "100.30$", '99.99$', "9.49$"]
 
-const currency = ( price ) => {
-    const splitted = price.split('.')
-    const dollars = Number(splitted[0])
-    const cents = parseInt(splitted[1].slice(0, -1))
-    const curren = splitted[1].slice(2) === '$' ? 'Dolares' : null
-
-    return `El Precio es: ${dollars} ${curren} con ${cents} centavos`
+const currency = ( prices ) => {
+    return prices.map( price => {
+            const splitted = price.split('.')
+            const dollars = Number(splitted[0])
+            const cents = parseInt(splitted[1].slice(0, -1))
+            const curren = splitted[1].slice(2) === '$' ? 'Dolares' : null
+            
+            return `El Precio es: ${dollars} ${curren} con ${cents} centavos`
+    })
 }
 
-console.log(currency(precio))
+console.log(currency(precios)) */
+
+/* me harás una función que reciba un numero cualquiera
+y que me muestre por consola todos los numeros desde ese numero hasta el 0 */
+
+let xy = prompt("ingrese un numero del 1 al 100")
+xy = parseInt(xy)
+
+function negativeCounter(xy) {
+    while (xy >= 0) {
+        console.log(xy)
+        xy--
+    }
+    return 'Ejecucion con exito'
+}
+
+console.log(negativeCounter(xy))
