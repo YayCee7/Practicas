@@ -7,7 +7,7 @@ console.log('HELLO')
 console.log('WORLD')
 console.log(2)*/ //se pueden dejar sms, numeros, ecuaciones y variables.
 
-let lorem = 'lorem ipsum dolor sit amet.';
+let lorem = 'lorem ipsum dolor sit amet.zz';
 
 document.write(lorem);
 //Con Document y write escribimos lo que alamecenemos en la variable y se muestra en la pagina.
@@ -382,6 +382,17 @@ let resultado = numerico
     console.log(resultado)
 } */
 
+// bucle con break //
+
+/* let B = 0
+
+while (B < 100) {
+    B++
+    console.log(B)
+    if (B == 10){
+    break
+    }
+} */
 
 // do while //
 
@@ -409,6 +420,12 @@ let palabra = "CUACK"
     ejecutame esto
 } */
 
+// Ejemplo de for //
+
+/* for (const i = 0; i < 6; i++){ // esta condicion se cumplirá tantas veces como le indiquemos.
+    console.log(i)
+} */ 
+
 // console.log(listado)
 /* for (let i=listado.length; i>0; i--){
     console.log(listado[index])
@@ -422,8 +439,8 @@ let palabra = "CUACK"
     console.log(elemento)
 }  */ // con in te mostrara el indice de cada elemento.
                 // 0            1           2
-let input = ['test@test.com', 'a@a.a', 'danitequiero@suanfonson.com', 'julle@dicksuck.org', 'gayculebra@picado.julle']
-
+/* let input = ['test@test.com', 'a@a.a', 'danitequiero@suanfonson.com', 'julle@dicksuck.org', 'gayculebra@picado.julle']
+ */
 // El dueño del Cyber quiere saber el correo de sus usuarios y su numero (tomando en cuenta el 0 en adelante)
 
 /* console.log(input)
@@ -476,9 +493,10 @@ let cantidad= prompt('seleccione cuantos elementos quiere borrar min: 1') */
     console.log(item)
 } */
 
-// Guarda diversos elementos en una lista y luego muestramelos por pantalla
 
-// Funciones
+// FUNCIONES // 
+
+// Guarda diversos elementos en una lista y luego muestramelos por pantalla
 
 let arrayNapato = ['C', 'MAMUTH', 'TIO', 'OSTIA', 'HACIENDA']
 
@@ -486,6 +504,8 @@ function borrarArray(arr, index, cantidad) {
     arr.splice(index, cantidad)
     return arr
 }
+
+console.log(borrarArray)
 
 // console.log(borrarArray(arrayNapato, 3, 2))
 
@@ -534,7 +554,7 @@ console.log(currency(precios)) */
 /* me harás una función que reciba un numero cualquiera
 y que me muestre por consola todos los numeros desde ese numero hasta el 0 */
 
-let xy = prompt("ingrese un numero del 1 al 100")
+/* let xy = prompt("ingrese un numero del 1 al 100")
 xy = parseInt(xy)
 
 function negativeCounter(xy) {
@@ -545,4 +565,9 @@ function negativeCounter(xy) {
     return 'Ejecucion con exito'
 }
 
-console.log(negativeCounter(xy))
+console.log(negativeCounter(xy)) */
+
+function saludo(frase) {
+    let frase = prompt(`buen dia, coloca tu nombre: ${nombre}`)
+    return alert(`hola ${nombre} espero tengas un buen dia`)
+}
