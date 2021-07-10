@@ -35,9 +35,11 @@ class Display {
     }
 
     agregarNumero(numero) {
-        if(numero === '.' && this.valorActual.includes('.')) return
-        this.valorActual = this.valorActual.toString() + numero.toString();
-        this.imprimirValores();
+        if (this.valorActual.length < 12) {
+            if (numero === '.' && this.valorActual.includes('.')) return
+            this.valorActual = this.valorActual.toString() + numero.toString();
+            this.imprimirValores();
+        }
     }
     
     imprimirValores() {
@@ -45,11 +47,13 @@ class Display {
         this.displayValorAnterior.textContent = `${this.valorAnterior} ${this.signos[this.tipoOperacion] || ''}`;
     }
 
-    calcular(){
+    calcular() {
         const valorAnterior = parseFloat(this.valorAnterior);
         const valorActual = parseFloat(this.valorActual);
 
-        if(isNaN(valorActual) || isNaN(valorAnterior) ) return;
-        this.valorActual = this.calculador[this.tipoOperacion](valorAnterior, valorActual);
+        if (isNaN(valorActual) || isNaN(valorAnterior)) return;
+
+        let resolve = (this.calculador[this.tipoOperacion](valorAnterior, valorActual)).toString().slice(0, 12)
+        this.valorActual = resolve === 'Infinity' ? 'Error' : resolve
     }
 }
