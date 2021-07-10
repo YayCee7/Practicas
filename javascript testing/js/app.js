@@ -455,7 +455,6 @@ for ( item of input ) {
 
  // input.map((el, index) => console.log(`${index} = ${el}`))
 
-
 // Function: es una funcion independiente. // 
 
 function suma(num1, num2) {
@@ -524,50 +523,3 @@ function info(index) {
 }
 
 /* console.log(info(3)) */
-
-let vehiculo = 'Lamborghini LP-700 2010' // .split(' ') --> array
-let separado = vehiculo.split(' ')
-
-/* console.log(separado) */
-
-let marca = separado[0]
-let modelo = separado[1]
-let year = separado[2]
-
-//console.log(`La marca de tu vehiculo es un ${marca} modelo ${modelo} del año ${year}.`)
-
-/* let precios = ["35.21$", "100.30$", '99.99$', "9.49$"]
-
-const currency = ( prices ) => {
-    return prices.map( price => {
-            const splitted = price.split('.')
-            const dollars = Number(splitted[0])
-            const cents = parseInt(splitted[1].slice(0, -1))
-            const curren = splitted[1].slice(2) === '$' ? 'Dolares' : null
-            
-            return `El Precio es: ${dollars} ${curren} con ${cents} centavos`
-    })
-}
-
-console.log(currency(precios)) */
-
-/* me harás una función que reciba un numero cualquiera
-y que me muestre por consola todos los numeros desde ese numero hasta el 0 */
-
-/* let xy = prompt("ingrese un numero del 1 al 100")
-xy = parseInt(xy)
-
-function negativeCounter(xy) {
-    while (xy >= 0) {
-        console.log(xy)
-        xy--
-    }
-    return 'Ejecucion con exito'
-}
-
-console.log(negativeCounter(xy)) */
-
-function saludo(frase) {
-    let frase = prompt(`buen dia, coloca tu nombre: ${nombre}`)
-    return alert(`hola ${nombre} espero tengas un buen dia`)
-}
