@@ -1,4 +1,4 @@
-function saludo(frase) {
+/* function saludo(frase) {
     let frase = prompt(`buen dia, coloca tu nombre: ${nombre}`)
     return alert(`hola ${nombre} espero tengas un buen dia`)
 }
@@ -195,7 +195,7 @@ const dias=["lunes",
     return console.log(semana[i])
 } */
 
-let any = 0
+/* let any = 0
 
 let other = 200
 
@@ -221,21 +221,21 @@ function week(number) {
     "domingo",
     ]
     return console.log(dias[number -1]) // admite usar ecuaciones de suma y resta
-}
+} */
 
 // week(1)
 
-const listaDeAutos = () => {
+/* const listaDeAutos = () => {
     const autos = ["Evo - 300cv", "supra - 330cv", "skyline - 335cv", "mx5 - 150cv", "nsx - 325cv"]
     for (auto of autos){
         let datos = auto.split(" - ")
         console.log(`Nombre: ${datos[0]}, Potencia: ${datos[1]}`)
     }
-}
+} */
 
 // listaDeAutos()
 
-const intercambio = (number) => {
+/* const intercambio = (number) => {
     switch (number) {
         case 1: 
             console.log("Esto es el caso 1")
@@ -251,11 +251,11 @@ const intercambio = (number) => {
             console.log("Parametro no valido")
             break;
     }
-}
+} */
 
 // intercambio(5)
 
-const ecuacion = (exp) => { // 2+1
+/* const ecuacion = (exp) => { // 2+1
     let separado = exp.split('')
     let num1 = parseInt(separado[0])
     let symbol = separado[1]
@@ -278,7 +278,7 @@ const ecuacion = (exp) => { // 2+1
             console.log("Ecuación invalida")
             break;
     }
-}
+} */
 
 // ecuacion("5*5")
 
@@ -326,10 +326,10 @@ const input = ['3+2', '5*8', '9/9', '8-4']
 // Callback's tipo I: una funcion que llama a otra funcion.
 //    =       tipo II: funcion que recibe una funcion anonima como argumento.
 
-const resultados = (exp) => {
+/* const resultados = (exp) => {
 exp.map((element,index) => {
     ecuacion(element)
-}) // funcion anonima (crea automaticamente un array)
+}) */ // funcion anonima (crea automaticamente un array)
 
 /*  for (data of exp){
      ecuacion(data)
@@ -338,7 +338,7 @@ exp.map((element,index) => {
 /*  exp.forEach(element => {
         ecuacion(element)
     }); */ //es igual a map pero solo trabajamos con el elemento
-}
+//}
 
 // resultados(input)
 
@@ -347,13 +347,28 @@ const numbers = [2, 4, 6, 9]
 
 // forEach: este es como el for normal, par hacer cambios sin alamacenarlo en la variable.
 
-users.forEach(loc => {
+/* users.forEach(loc => {
     console.log(loc)
-})
+}) */
 
 // map: en este tambien hace el recorrido como for solo que podemos almacenar el resultado en la variable.
 
-users.map(loc => {
+/* users.map(loc => {
     console.log(loc)
-})
+}) */
 
+// Despeja los items que su precio sea mayor a $10
+
+lista = [
+{ nombre: 'Chocolate', precio: 25 },
+{ nombre: 'Harina', precio: 10 },
+{ nombre: 'Papelon', precio: 15 },
+{ nombre: 'Cerveza', precio: 12 },
+{ nombre: 'Leche', precio: 8 },
+{ nombre: 'Granos', precio: 6 },
+{ nombre: 'Arroz', precio: 2 },
+]
+
+const itemsM10 = lista.filter (i => i.precio >= '11')
+
+console.log(itemsM10)
