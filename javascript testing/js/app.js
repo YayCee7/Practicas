@@ -519,7 +519,7 @@ for ( item of nombresLista ) {
 
 // FUNCIONES // 
 
-/* funtion salu2(){
+funtion salu2(){
 
     respuesta = prompt("¡Hola! ¿como estas?");
     if (respuesta == 'bien'){
@@ -527,7 +527,7 @@ for ( item of nombresLista ) {
     } else {
         alert("que pena u_u")
     }
-} */
+}
 
 /* saludo() */ //Asi se llama a una funcion (las veces que se requiera)
 
