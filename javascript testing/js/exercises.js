@@ -357,7 +357,7 @@ const numbers = [2, 4, 6, 9]
     console.log(loc)
 }) */
 
-// Despeja los items que su precio sea mayor a $10
+// Despeja los items que su precio sea mayor a $10 (metodo filter)
 
 lista = [
 { nombre: 'Chocolate', precio: 25 },
@@ -369,6 +369,10 @@ lista = [
 { nombre: 'Arroz', precio: 2 },
 ]
 
-const itemsM10 = lista.filter (i => i.precio >= '11')
+// const itemsM10 = lista.filter (i => i.precio >= 11)
 
-console.log(itemsM10)
+// console.log(itemsM10)
+
+// Segundo metodo de despeje por Map
+
+// let itemsM10.map(el => console.log(el.precio))

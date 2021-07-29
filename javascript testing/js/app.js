@@ -1,11 +1,11 @@
 // log de consola: esto te ayuda a mostrar mensajes en cosola.
 
-/* console.log("IDK")
+console.log("IDK")
 console.log("XD")
 console.log("COOL")
 console.log('HELLO')
 console.log('WORLD')
-console.log(2)*/ //se pueden dejar sms, numeros, ecuaciones y variables.
+console.log(2)//se pueden dejar sms, numeros, ecuaciones y variables.
 
 let lorem = 'lorem ipsum dolor sit amet.zz';
 
@@ -18,17 +18,17 @@ document.write(lorem);
 alert('Bienvenido a mi test de js');
 console.log('Bienvenido a mi test de js');
 
-/*let cajita = 'ñapato'; // variable tipo: texto.
+let cajita = 'ñapato'; // variable tipo texto
 cajita = 2+2;
 
 let gumball = cajita;
 
-console.log(gumball);*/
+console.log(gumball);
 
 
 // Operaciones Matemáticas. //
 
-/* console.log('>>operaciones matematicas<<');
+console.log('>>operaciones matematicas<<');
 
 let num1 = 23;
 let num2 = 7;
@@ -40,12 +40,12 @@ console.log(resultado);
 console.log(num1-num2);
 console.log(num1*num3);
 console.log(num1/num2);
-console.log(num1%num3); */
+console.log(num1%num3);
 
 
 // Operaciones de incremento y decremento. //
 
-/*console.log('>>incremento y decremento<<')
+console.log('>>incremento y decremento<<')
 console.log('Incremento')
 {let a = 5;
 
@@ -60,12 +60,12 @@ let b = 5;
 console.log(b)
 console.log(b--)
 console.log(b)
-console.log(--b);} */
+console.log(--b);}
 
 
 // operadores de asignación. //
 
-/*console.log('>>Operaciones de asignación<<');
+console.log('>>Operaciones de asignación<<');
 
 let c = 10;
 
@@ -94,12 +94,12 @@ let nombre = prompt('Hola, como te llamas?');
 
 alert('Hola '+nombre+', buen dia.');
 
-console.log(nombre);*/
+console.log(nombre);
 
 
 // sumar X num (min:2) mostrar en alert el resultado //
 
-/*let numx = parseInt(prompt('ingrese el primer numero')); // prompt se usa para guardar respuesta en texto.
+let numx = parseInt(prompt('ingrese el primer numero')); // prompt se usa para guardar respuesta en texto.
 let numy = parseInt(prompt('sumar con:')); // parseInt convierte el texto en numeros enteros.
 
 alert(numx+numy);
@@ -108,12 +108,12 @@ console.log(numx+numy);
 
 const PI = 3.14; //una constante es para añadir un valor que sera permanente y no será re-emplazada.
 
-console.log(PI);*/
+console.log(PI);
 
 
 // String //
 
-/*let strings = "Cadenas";
+let strings = "Cadenas";
 let strings1 = " _cadenas de ejemplos en js...  ";
 let strings2 = "Cadenas multiples ";
 
@@ -132,22 +132,22 @@ console.log(strings1.endsWith('...  '));//Aqui es "Termina en" que al igual se p
 console.log(strings1.includes('ejemplos'));//Hace lo mismo que indexOf pero te da True o False//
 console.log(strings1.includes('a',6));//Y aqui le colocamos a partir de que posicion buscar el valor//
 console.log(strings2.repeat(2));//Repetimos la variable tantas veces como le indiquemos//
-console.log('Hola Mundo'.repeat(10));//Tambien se puede usar asi//*/
+console.log('Hola Mundo'.repeat(10));//Tambien se puede usar asi//
 
 
 // Template Strings //
 
-/* let firstname = 'Julio';
+let firstname = 'Julio';
 let secondname = 'Cesar';
 let yearsold = '23';
 
-console.log('Hola' + " " + firstname + " " + secondname + ', tienes' + " " + yearsold + " " + 'años.');
+/* console.log('Hola' + " " + firstname + " " + secondname + ', tienes' + " " + yearsold + " " + 'años.');
 console.log(´Hola ${firstname} ${secondname}, tienes ${yearsold} años.´); */
 // IMPORTANTE solo usar tildes inversos `` (o Backticks) para concatenar usando ${}.
 
 
 // Condicionales //
-/* 
+
 let con = -9;
 let sin = 2;
 
@@ -185,7 +185,8 @@ else{
 // && and , || o //
 
 if(con>0 && sin>0){
-    console.log(`${con} y ${sin} son mayores que 0`); */
+    console.log(`${con} y ${sin} son mayores que 0`);
+}
 
 // =! --> (Not) 
 // && --> (and) todas las condiciones deben cumplirse para true.
@@ -194,14 +195,14 @@ if(con>0 && sin>0){
 
 /* bombillo */
 
-/* let pos = false
+let pos = false
 let negativo = false
 
 if (pos || negativo){
     alert('Enciende')
 }else {
     alert('DOPE')
-} */
+}
 
 
 // OPERADORES de COMPARACION //
@@ -210,7 +211,7 @@ if (pos || negativo){
 // == --> si es igual pero no es estricto (si lo que estamos comparando es del mismo tipo)
 // Mayor que >=, Menor que <=.
 
-/* let y2 = "2"
+let y2 = "2"
 
 if (y2 === 2){
     alert('y2 es igual a 2')
@@ -228,11 +229,11 @@ if (y3 !== 3){
 }
 else {
     alert('y3 no es diferente a 3')
-} */
+}
+
 
 // calcule la myoria de edad de una persona; que este ingrese su edad.
-
-/* let edad = parseInt(prompt('Hola, que edad tiene usted?'))
+let edad = parseInt(prompt('Hola, que edad tiene usted?'))
 
 if (edad>17) {
     alert('Usted es mayor de edad.')
@@ -240,13 +241,13 @@ if (edad>17) {
     alert('Usted no cumple con la mayoria de edad.')
 } else {
     alert('Dato Erroneo.')
-} */
+}
 
 // else -> todo lo contrario a eso
 
 // Un programa donde un usuario ingrese su edad y este le diga si es un niño/adolecente/adulto/anciano.
 
-/* let edad = parseInt(prompt('Hola, por favor ingrese su edad'))
+let edad = parseInt(prompt('Hola, por favor ingrese su edad'))
 
 if (edad>0 && edad<11){
     alert('es usted un niño.')
@@ -258,13 +259,13 @@ if (edad>0 && edad<11){
     alert ('BOOMER.')
 } else {
     alert('Dato Erroneo.')
-} */
+}
 
 
 // Menu de opciones [EJEMPLO]
 /* con switch trabajamos casos en concreto. */ 
 
-/* let respuesta = parseInt(prompt('Seleccione una Opcion: 1 al 3 '))
+let respuesta = parseInt(prompt('Seleccione una Opcion: 1 al 3 '))
 
 switch (respuesta) {
     case 1:
@@ -279,11 +280,12 @@ switch (respuesta) {
     default:
         alert('Dato Erroneo')
         break;
-} */
+}
+
 
 // un programa que en base al numero del usuario, le muestre el mes [hasta Julio]
 
-/* let respuesta = prompt('ingrese el nombre del mes actual')
+let respuesta = prompt('ingrese el nombre del mes actual')
 
 switch (respuesta.toLowerCase()) {
     case 'enero':
@@ -317,13 +319,13 @@ switch (respuesta.toLowerCase()) {
     default:
         alert('Dato Erroneo.')
         break;
-} */
+}
 
 
 // estudiante, 3 notas, que calcule el promedio, alertar si es bueno, medio, malo [entre 0 a 20 como nota]
 // para calcular el promedio se suman las 3 notas y se divide entre el numero de ellas (3)
 
-/* let nota1 = parseInt(prompt('Ingrese su nota en primer lapso'))
+let nota1 = parseInt(prompt('Ingrese su nota en primer lapso'))
 let nota2 = parseInt(prompt('Ingrese su nota en segundo lapso'))
 let nota3 = parseInt(prompt('Ingrese su nota en tercer lapso'))
 let promedio = (nota1 + nota2 + nota3)/3;
@@ -337,54 +339,55 @@ if (promedio<11) {
     alert('Su nota total excíme el promedio necesario.')
 } else {
     alert('Dato Erroneo.')
-} */
+}
 
 
 // [PRUEBA DE STRINGS] limpiar los espacios de un texto.
 
-
 // quiz 1
-/* let texto = ' re-contra marico el que se buguee   '
-console.log(texto.trim()) */
+let texto = ' re-contra marico el que se buguee   '
+console.log(texto.trim())
 
 
 // TERNARIOS //
 
-/* texto ? console.log(texto) : console.log('no existe esta chingada') // esto es un operador ternario que es igual a:
+texto ? console.log(texto) : console.log('no existe esta chingada')// esto es un operador ternario que es igual a:
 
 if(texto){
     console.log(texto)
 } else {
     console.log('no existe esta chingada')
-} */ // el ternario es igual a eso solo que comprimido para optimizar memoria. // requieren obligatoriamente un else
+}
+// el ternario es igual a eso solo que comprimido para optimizar memoria.
+// requieren obligatoriamente un else
 
 
 // BUCLES [While] //
 
-/*let numerico = 100
+let numerico = 100
 let divisor = 2
 let resultado = numerico
 
- while (numerico<=100) {
+while (numerico<=100) {
     console.log(numerico)
     numerico++
-} */
+}
 
-/* while (numerico<=10) {
+while (numerico<=10) {
     console.log(numerico*multiplicador)
     numerico++ // numerico + 1 = 2
-} */
+}
+
 
 // toma 100 y dividelo entre 2 hasta que ya no se pueda dividir (y liga que no explote).
-
-/* while (resultado!=1) {
+while (resultado!=1) {
     resultado = Math.round(resultado/divisor) //"Math" es una clase de objetos matematicos y ".round" es para redondear.
     console.log(resultado)
-} */
+}
 
 // bucle con break //
 
-/* let B = 0
+let B = 0
 
 while (B < 100) {
     B++
@@ -392,22 +395,22 @@ while (B < 100) {
     if (B == 10){
     break
     }
-} */
+}
 
 // do while //
 
-/* let obj = 1
+let obj = 1
 let palabra = "CUACK"
 
- do {
+do {
     objeto === "BOMBILLO" ? sw = false : sw = true
     console.log('Inicializado')
-} while (sw) */
+} while (sw)
 
-/* do {
+do {
     console.log(palabra)
     obj++
-} while (obj<=4); */
+} while (obj<=4);
 
 
 // Array I //
@@ -422,28 +425,28 @@ let palabra = "CUACK"
 
 // Ejemplo de for //
 
-/* for (const i = 0; i < 6; i++){ // esta condicion se cumplirá tantas veces como le indiquemos.
+for (const i = 0; i < 6; i++){ // esta condicion se cumplirá tantas veces como le indiquemos.
     console.log(i)
-} */ 
+}
 
-// console.log(listado)
-/* for (let i=listado.length; i>0; i--){
+console.log(listado)
+
+for (let i=listado.length; i>0; i--){
     console.log(listado[index])
-} */
+}
 
-/* for ( elemento of listado ){
+for ( elemento of listado ){
     console.log(elemento)
-} */ // simplificado de un Array. of trabaja con el valor de cada indice, osea el elemento.
+}// simplificado de un Array. of trabaja con el valor de cada indice, osea el elemento.
 
-/* for ( elemento in listado) {
+for ( elemento in listado) {
     console.log(elemento)
-}  */ // con in te mostrara el indice de cada elemento.
+} // con in te mostrara el indice de cada elemento.
                 // 0            1           2
-/* let input = ['test@test.com', 'a@a.a', 'danitequiero@suanfonson.com', 'julle@dicksuck.org', 'gayculebra@picado.julle']
- */
+let input = ['test@test.com', 'a@a.a', 'danitequiero@suanfonson.com', 'julle@dicksuck.org', 'gayculebra@picado.julle']
 // El dueño del Cyber quiere saber el correo de sus usuarios y su numero (tomando en cuenta el 0 en adelante)
 
-/* console.log(input)
+console.log(input)
 
 for ( item in input ){
     console.log(item)
@@ -451,23 +454,44 @@ for ( item in input ){
 
 for ( item of input ) {
     console.log(item)
-} // of busqueda del elemento. */
+} // of busqueda del elemento.
 
- // input.map((el, index) => console.log(`${index} = ${el}`))
+input.map((el, index) => console.log(`${index} = ${el}`))
+
+
+// LABEL //
+
+// el Label es una sentencia que sirve para asignarle un nombre a un bucle.
+arra1 = ["Dan", "Julle", "Julio", "Heidegger"]
+array2 = ["negro", "verde",array1, "rojo", "morado"]
+
+forLabel: //se representa con -> :
+for (let array in array2){
+    if (array == 2){
+
+        for (let array of array1){
+            console.log(array)
+            break forLabel
+        }
+
+    } else {
+        console.log(array2[array])
+    }
+}
+
 
 // Function: es una funcion independiente. // 
-
 function suma(num1, num2) {
     return console.log(num1+num2)
 }
 
 const suma2 = (num1,num2) => num1+num2
 
-/* suma(2,2)
+suma(2,2)
 suma(4,5)
-suma(6,6) */
+suma(6,6)
 
-// console.log(suma2(2,2))
+console.log(suma2(2,2))
 
 let nombresLista = []
 
@@ -481,19 +505,31 @@ nombresLista.push('Jorgais')
 nombresLista.push('Marico el que se bugguee')
 nombresLista.push('IDK')
 
-// nombresLista.pop() //para borrar el ultimo
 
-/* let indiceBorrar = prompt('seleccione el elementeo a borrar')
-let cantidad= prompt('seleccione cuantos elementos quiere borrar min: 1') */
+// nombresLista.pop() //para borrar el ultimo
+let indiceBorrar = prompt('seleccione el elementeo a borrar')
+let cantidad= prompt('seleccione cuantos elementos quiere borrar min: 1')
+
 
 // nombresLista.splice(indiceBorrar, cantidad) //para borrar desde el indice seleccionado
-
-/* for ( item of nombresLista ) {
+for ( item of nombresLista ) {
     console.log(item)
-} */
+}
 
 
 // FUNCIONES // 
+
+/* funtion salu2(){
+
+    respuesta = prompt("¡Hola! ¿como estas?");
+    if (respuesta == 'bien'){
+        alert("Me alegro ^u^")
+    } else {
+        alert("que pena u_u")
+    }
+} */
+
+/* saludo() */ //Asi se llama a una funcion (las veces que se requiera)
 
 // Guarda diversos elementos en una lista y luego muestramelos por pantalla
 
@@ -506,9 +542,9 @@ function borrarArray(arr, index, cantidad) {
 
 console.log(borrarArray)
 
-// console.log(borrarArray(arrayNapato, 3, 2))
+console.log(borrarArray(arrayNapato, 3, 2))
 
-// arrayNapato.map(function (el) { return console.log(el) })
+arrayNapato.map(function (el) { return console.log(el) })
 
 let STATUS = [
     'ACTIVO', // 0
@@ -522,4 +558,4 @@ function info(index) {
     return STATUS[index - 1]
 }
 
-/* console.log(info(3)) */
+console.log(info(3))
