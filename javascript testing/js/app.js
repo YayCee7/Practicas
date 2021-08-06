@@ -1,10 +1,7 @@
 // log de consola: esto te ayuda a mostrar mensajes en cosola.
 
-console.log("IDK")
-console.log("XD")
-console.log("COOL")
 console.log('HELLO')
-console.log('WORLD')
+
 console.log(2)//se pueden dejar sms, numeros, ecuaciones y variables.
 
 let lorem = 'lorem ipsum dolor sit amet.zz';
@@ -111,21 +108,18 @@ const PI = 3.14; //una constante es para añadir un valor que sera permanente y 
 console.log(PI);
 
 
-// String //
+// String // propiedades y metodos
 
 let strings = "Cadenas";
 let strings1 = " _cadenas de ejemplos en js...  ";
 let strings2 = "Cadenas multiples ";
 
-console.log(strings.length);//te da el valor que ocupa la variable//
-console.log(strings.toUpperCase());//Devuelve el valor en MAYUSCULAS//
-console.log(strings.toLowerCase());//Devuelve el valor en minsculas//
-console.log(strings.split()) //Corta un texto dependiendo el caracter o texto especificado, devuelve un array
-console.log(strings.indexOf('de'));//Devuelve la posición del valor que existe o no entre variables//
-console.log(strings.replace('Cadenas','Strings'));//Este parametro sirve para re-emplazar un valor dado//
-console.log(strings.substring(0,6));//Funciona para devolver un valor desde un inicio y un fin//
-console.log(strings.slice(0,-3));//Es igual que Substring pero acepta valores negativos y lee en el orden que se le ponga//
-console.log(strings1.trim());//Este parametro sirve para eliminar los espacios vacios al comienzo y al final//
+console.log(strings.length);//te da el valor que ocupa la variable// PROPIEDAD
+console.log(strings.toUpperCase());//Devuelve el valor en MAYUSCULAS// METODO
+console.log(strings.toLowerCase());//Devuelve el valor en minsculas// METODO
+console.log(strings.indexOf('de'));//Devuelve la posición del valor que existe o no entre variables// METODO
+console.log(strings.substring(0,6));//Funciona para devolver un valor desde un inicio y un fin// METODO
+console.log(strings1.trim());//Este parametro sirve para eliminar los espacios vacios al comienzo y al final// METODO
 console.log(strings.startsWith('C'));//Como la plabra lo indica, "Inicia con" + el valor que se pide//
 console.log(strings1.startsWith('e',13));//Y se puede decir desde que posicion//
 console.log(strings1.endsWith('...  '));//Aqui es "Termina en" que al igual se puede elegir la posicion//
@@ -134,6 +128,13 @@ console.log(strings1.includes('a',6));//Y aqui le colocamos a partir de que posi
 console.log(strings2.repeat(2));//Repetimos la variable tantas veces como le indiquemos//
 console.log('Hola Mundo'.repeat(10));//Tambien se puede usar asi//
 
+// Los que se usan con mas frecuencia:
+console.log(strings.slice(0,-3));//Es igual que Substring pero acepta valores negativos y lee en el orden que se le ponga// METODO
+// slice puede contar desde donde le indiquemos ejem: (0,-6) empezando desde el 0 e ignorando los ultimos 6.
+console.log(strings.split()) //Corta un texto dependiendo el caracter o texto especificado, devuelve un array // METODO
+// split divide en texto 
+console.log(strings.replace('Cadenas','Strings'));//Este parametro sirve para re-emplazar un valor dado// METODO
+
 
 // Template Strings //
 
@@ -141,9 +142,43 @@ let firstname = 'Julio';
 let secondname = 'Cesar';
 let yearsold = '23';
 
-/* console.log('Hola' + " " + firstname + " " + secondname + ', tienes' + " " + yearsold + " " + 'años.');
-console.log(´Hola ${firstname} ${secondname}, tienes ${yearsold} años.´); */
+console.log('Hola' + " " + firstname + " " + secondname + ', tienes' + " " + yearsold + " " + 'años.');
+
+console.log(`Hola ${firstname} ${secondname}, tienes ${yearsold} años.`);
 // IMPORTANTE solo usar tildes inversos `` (o Backticks) para concatenar usando ${}.
+
+
+// OBJETO Math //
+// propiedades //
+Math.E;
+Math.PI;
+
+// METODOS //
+Math.abs(x);// Devuelve el valor absoluto de x.
+Math.ceil(x);// Devuelve el entero mas mayor o igual que un numero (redondea el valor menor).
+Math.floor(x);// igual que ceil pero redondea el valor menor.
+Math.pow(x,y);// Devuelve la potencia x elevado a y.
+Math.random();// Genera un numero pseudo-random entre 0 y 1.
+Math.round(x);// Devuelve un valor intermedio redondeando al entero mas cercano.
+Math.sign(-x);// Devolviendo el signo del valor (tambien numeros si colocamos como valor en sign).
+
+console.log(Math.E);
+console.log(Math.PI);
+
+let numMath = 5.6;
+
+console.log(Math.abs(numMath));
+
+console.log(Math.ceil(numMath));
+
+console.log(Math.floor(numMath));
+
+console.log(Math.pow(2.3)); // "2.3" es igual a (base.exponente).
+
+console.log(Math.round(Math.random()*100)); // formula para generar un numero entre 0 y el valor multiplicado.
+// console.log(Math.random() * (max - min)+min); // formula para geerar un numero entre un minimo dado y un maximo.
+
+console.log(Math.sign(numMath)); // devuelve tres posibles valores: -1 | 0 | 1.
 
 
 // Condicionales //
@@ -151,32 +186,31 @@ console.log(´Hola ${firstname} ${secondname}, tienes ${yearsold} años.´); */
 let con = -9;
 let sin = 2;
 
-if(con>0){
-    console.log('${con} es mayor que 0');
-    console.log('${con} es mayor que 0');
-}
+// Condicional simple //
+
+if(con>0) console.log(`${con} es mayor que 0`);
 
 
 // Condicional Compuesto //
 
 if(con>0){
-    console.log('${con} es mayor que 0');
+    console.log(`${con} es mayor que 0`);
 }
 else{
-    console.log('${con} es menor que 0');
+    console.log(`${con} es menor que 0`);
 }
 
 
 // Condicionales Multiples //
 
 if(con>0){
-    console.log('${con} es mayor que 0');
+    console.log(`${con} es mayor que 0`);
 }
 else if(con<0){
-    console.log('${con} es menor que 0');
+    console.log(`${con} es menor que 0`);
 }
 else{
-    console.log('${con} es igual que 0');
+    console.log(`${con} es igual que 0`);
 } 
 
 
@@ -519,7 +553,7 @@ for ( item of nombresLista ) {
 
 // FUNCIONES // 
 
-funtion salu2(){
+funtion saludo(){
 
     respuesta = prompt("¡Hola! ¿como estas?");
     if (respuesta == 'bien'){
@@ -527,7 +561,7 @@ funtion salu2(){
     } else {
         alert("que pena u_u")
     }
-}
+};
 
 /* saludo() */ //Asi se llama a una funcion (las veces que se requiera)
 
