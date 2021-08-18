@@ -1,0 +1,12 @@
+{
+  "name": "Practicas",
+  "version": "1.0.0",
+  "description": "Practicas de JS",
+  "main": "index.js",
+  "repository": "https://github.com/YayCee7/Practicas.git",
+  "author": "YayCee7 <julioachram@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "axios": "^0.21.1"
+  }
+}

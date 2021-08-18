@@ -357,8 +357,8 @@ const numbers = [2, 4, 6, 9]
     console.log(loc)
 }) */
 
-// Despeja los items que su precio sea mayor a $10 (metodo filter)
 
+// Despeja los items que su precio sea mayor a $10 (metodo filter)//
 lista = [
 { nombre: 'Chocolate', precio: 25 },
 { nombre: 'Harina', precio: 10 },
@@ -376,3 +376,60 @@ lista = [
 // Segundo metodo de despeje por Map
 
 // let itemsM10.map(el => console.log(el.precio))
+
+
+//Lista de notas en orden mayor a menor//
+notas = [
+    { alumno: 'Jorge Nitales', nota: 95 },
+    { alumno: 'Alan Brito', nota: 20 },
+    { alumno: 'Rosa Melano', nota: 15 },
+    { alumno: 'Debora Meltrozo', nota: 50 },
+    { alumno: 'Kago Chen Thao', nota: 80 },
+    { alumno: 'Elmer Curio', nota: 69 },
+    { alumno: 'Julle Mipana', nota: 100 },
+];
+
+//primer metodo//
+notas.sort((a, b) => {
+    if (a.nota == b.nota){
+        return 0;
+    }
+    if (a.nota > b.nota){
+        return -1;
+    }
+    return 1;
+});
+
+//console.log(notas);
+
+//segundo metodo//
+notas.sort((a, b) => b.nota - a.nota);
+
+//console.log(notas);
+
+
+//listado de objetos en orden mayor a menor con IVA del 10% y valor total//
+articulos = [
+    { articulo: 'harina', precio: 1 },
+    { articulo: 'pasta', precio: 2.6 },
+    { articulo: 'arroz', precio: 1.4 },
+    { articulo: 'carne', precio: 3 },
+    { articulo: 'pollo', precio: 2},
+];
+
+articulos.forEach((obj) => {
+       const iva = (obj.precio *10)/100
+        obj.precio += iva
+        obj.precio = obj.precio.toFixed(2)
+
+        return obj
+});
+
+const articulosSort = articulos.sort((a, b) => b.precio - a.precio)
+
+articulosSort.forEach((articulo) => {
+    articulo.precio += '$'
+    return articulo
+})
+
+console.log(articulosSort);
