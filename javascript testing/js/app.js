@@ -553,7 +553,7 @@ for ( item of nombresLista ) {
 
 // FUNCIONES // 
 
-funtion saludo() {
+funtion saludo(){
 
     respuesta = prompt("¡Hola! ¿como estas?");
     if (respuesta == 'bien'){
@@ -593,4 +593,3 @@ function info(index) {
 }
 
 console.log(info(3))
-
